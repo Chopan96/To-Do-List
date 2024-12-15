@@ -1,0 +1,52 @@
+
+/* Asegura que el html y el body ocupen toda la altura */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-image: url("../imagenes/background.png");
+    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    background-position: center; /* Centra la imagen */
+    background-color: #000;
+    color: black;
+}
+
+#formulario{
+    background-color: #e9ecef91;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 9px;
+}
+
+
+
+/* Evita que la navbar crezca o se encoja inesperadamente */
+nav.navbar {
+    flex-shrink: 0; /* Previene que la navbar cambie de tamaño */
+    margin-bottom: 0; /* Elimina márgenes adicionales */
+}
+
+/* Asegura que el bloque principal sea el único que se expanda */
+#main-content {
+    flex: 1; /* Este contenedor ocupa el espacio restante */
+    margin-top: 1rem; /* Opcional: espacio entre la navbar y el contenido */
+}
+
+/* Estilo del footer */
+footer {
+    flex-shrink: 0; /* Asegura que el footer no se expanda ni encoja */
+    background-color: #212529;
+    color: white; 
+    padding: 1rem;
+    border-top: 1px solid #dee2e6; /* Línea superior del footer */
+}
+
+footer.span{
+    color: white;
+}
